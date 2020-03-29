@@ -20,7 +20,7 @@ knitr::opts_chunk$set(
 [![CRAN status](https://www.r-pkg.org/badges/version/covid19nytimes)](https://CRAN.R-project.org/package=covid19nytimes)
 <!-- badges: end -->
 
-The goal of covid19nytimes is to ...
+The  covid19nytimes package harvests the data made freely available by the New York Times. See https://www.nytimes.com/article/coronavirus-county-data-us.html for more.
 
 ## Installation
 
@@ -30,11 +30,52 @@ You can install the released version of covid19nytimes from [CRAN](https://CRAN.
 install.packages("covid19nytimes")
 ```
 
-## Example
+## Data
 
-This is a basic example which shows you how to load data from the source:
+The package has the data from states and counties. The package comes with static data that was downloaded at the time of the last package update.
 
 ```{r example}
 library(covid19nytimes)
-## basic example code
+
+head(covid19nytimes_states) %>% knitr::kable()
+
+head(covid19nytimes_counties) %>% knitr::kable()
+
+```
+
+## Getting the Most Up to Date Data
+
+To get the most updated data, run the following functions
+
+```{r eval=FALSE}
+covid19nytimes_states <- refresh_covid19nytimes_states()
+covid19nytimes_counties <- refresh_covid19nytimes_counties()
+```
+
+## Columns
+
+The data follows the covid19R standard for tidy Covid-19 data. The data columns are as follows:
+
+* date - The date in YYYY-MM-DD form
+* location - The name of the location as provided by the data source. The counties dataset provides county and state. They are combined and separated by a `,`, and can be split by `tidyr::separate()`, if you wish.
+* location_type - The type of location using the covid19R controlled vocabulary. Nested locations are indicated by multiple location types being combined with a `_
+* location_standardized - A standardized location code using a national or international standard. In this case, FIPS state or county codes. See https://en.wikipedia.org/wiki/Federal_Information_Processing_Standard_state_code and https://en.wikipedia.org/wiki/FIPS_county_code for more
+* location_standardized_type The type of standardized location code being used according to the covid19R controlled vocabulary. Here we use `fips_code`
+* data_type - the type of data in that given row. Includes `total_cases` and `total_deaths`, cummulative measures of both.
+
+* value - number of cases of each data type
+
+## Sample visualization
+
+```{r}
+library(dplyr)
+library(ggplot2)
+
+covid19nytimes_states %>%
+  filter(location %in% c("Washington", "New York", "Massachusetts", "Michigan", "Illinois")) %>%
+  filter(type == "total_deaths") %>%
+  ggplot(aes(x = date, y = value, color = location)) +
+  geom_line() +
+  theme_minimal() +
+  scale_y_continuous(trans = "log10")
 ```
