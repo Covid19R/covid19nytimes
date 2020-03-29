@@ -1,5 +1,5 @@
 Package: covid19nytimes
-Title: What the Package Does (One Line, Title Case)
+Title: Pulls the covid-19 data from the New York Times Public Data Source
 Version: 0.0.0.9000
 Authors@R: 
     person(given = "First",
@@ -8,7 +8,7 @@ Authors@R:
            email = "first.last@example.com",
            comment = c(ORCID = "YOUR-ORCID-ID"))
 Description: What the package does (one paragraph).
-License: See data source for License. Use usethis if applicable or just link to the license
+License: https://github.com/nytimes/covid-19-data/blob/master/LICENSE
 Suggests: 
     testthat
 Encoding: UTF-8
