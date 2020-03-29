@@ -1,0 +1,40 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# covid19nytimes
+
+<!-- badges: start -->
+[![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
+[![CRAN status](https://www.r-pkg.org/badges/version/covid19nytimes)](https://CRAN.R-project.org/package=covid19nytimes)
+<!-- badges: end -->
+
+The goal of covid19nytimes is to ...
+
+## Installation
+
+You can install the released version of covid19nytimes from [CRAN](https://CRAN.R-project.org) with:
+
+``` r
+install.packages("covid19nytimes")
+```
+
+## Example
+
+This is a basic example which shows you how to load data from the source:
+
+```{r example}
+library(covid19nytimes)
+## basic example code
+```
