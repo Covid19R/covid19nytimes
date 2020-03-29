@@ -8,7 +8,7 @@ Authors@R:
            email = "first.last@example.com",
            comment = c(ORCID = "YOUR-ORCID-ID"))
 Description: What the package does (one paragraph).
-License: GPL-3
+License: See data source for License. Use usethis if applicable or just link to the license
 Suggests: 
     testthat
 Encoding: UTF-8
