@@ -43,9 +43,9 @@ The package has the data from states and counties. The package comes with static
 ```{r data}
 library(covid19nytimes)
 
-head(covid19nytimes_states) %>% knitr::kable()
+head(covid19nytimes_states_demo) %>% knitr::kable()
 
-head(covid19nytimes_counties) %>% knitr::kable()
+head(covid19nytimes_counties_demo) %>% knitr::kable()
 
 ```
 
@@ -53,7 +53,7 @@ head(covid19nytimes_counties) %>% knitr::kable()
 
 To get the most updated data, run the following functions
 
-```{r refresh eval=FALSE}
+```{r refresh}
 covid19nytimes_states <- refresh_covid19nytimes_states()
 
 covid19nytimes_counties <- refresh_covid19nytimes_counties()

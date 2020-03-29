@@ -15,7 +15,7 @@
 #' @examples
 #'\dontrun{
 #'
-#' # update with a question prompt
+#' #update the data
 #' covid19nytimes_states <- refresh_covid19nytimes_states()
 #'
 #'
@@ -76,7 +76,7 @@ refresh_covid19nytimes_states <- function(){
 #' @examples
 #'\dontrun{
 #'
-#' # update with a question prompt
+#' #update the data
 #' covid19nytimes_counties <- refresh_covid19nytimes_counties()
 #'
 #'

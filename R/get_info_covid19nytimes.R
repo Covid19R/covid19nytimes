@@ -1,16 +1,25 @@
 #' Get information about the datasets provided by covid19nytimes
 #'
-#' @return
-#' @export
+#' @description Returns information about the datasets in this package for covid19R harvesting
+#'
+#' @return a tibble of information about the datasets in this apckage
+#' @export get_info_covid19nytimes
 #'
 #' @examples
-"get_info_covid19nytimes"
+#'\dontrun{
+#'
+#' #get the dataset info from this package
+#' get_info_covid19nytimes()
+#'
+#'
+#' }
 
 get_info_covid19nytimes <- function(){
   tibble::tribble(
     ~data_set_name, ~package_name, ~function_to_get_data,
     ~data_details, ~data_url, ~license_url,
     ~data_types,  ~has_geospatial_info,
+    ~spatial_extent,
 
     "covid19nytimes_states",
     "covid19nytimes",
@@ -20,6 +29,7 @@ get_info_covid19nytimes <- function(){
     "https://github.com/nytimes/covid-19-data/blob/master/LICENSE",
     "cases_total, deaths_total",
     FALSE,
+    "country",
 
     "covid19nytimes_counties",
     "covid19nytimes",
@@ -29,6 +39,7 @@ get_info_covid19nytimes <- function(){
     "https://github.com/nytimes/covid-19-data/blob/master/LICENSE",
     "cases_total, deaths_total",
     FALSE,
+    "country"
 
 
   )
