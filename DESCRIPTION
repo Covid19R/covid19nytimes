@@ -10,7 +10,8 @@ Authors@R:
 Description: What the package does (one paragraph).
 License: https://github.com/nytimes/covid-19-data/blob/master/LICENSE
 Suggests: 
-    testthat
+    testthat,
+    ggplot2
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
