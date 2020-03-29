@@ -1,10 +1,25 @@
 #' US State Data from the NY Times
 #'
-#' @return
-#' @export
+#' @description Update the state-level data from the New York Times on Covid-19
+#'
+#' @details Pulls from the open source data at https://www.nytimes.com/article/coronavirus-county-data-us.html
+#' including cummulative cases and deaths. Returns the data in the covid19R standard tidy format for easy use.
+#' See https://github.com/nytimes/covid-19-data for extensive methodology description and license.
+#'
+#' @source New York Times, "We’re Sharing Coronavirus Case Data for Every U.S. County" \href{https://www.nytimes.com/article/coronavirus-county-data-us.html}{article} and {https://github.com/nytimes/covid-19-data}{data repository}
+#' @source \href{https://github.com/Covid19R/documentation}{covid19R documentation}
+#'
+#' @return A tibble object
+#' @export refresh_covid19nytimes_states
 #'
 #' @examples
-"refresh_covid19nytimes_states"
+#'\dontrun{
+#'
+#' # update with a question prompt
+#' covid19nytimes_states <- refresh_covid19nytimes_states()
+#'
+#'
+#' }
 
 refresh_covid19nytimes_states <- function(){
   url <- "https://raw.githubusercontent.com/nytimes/covid-19-data/master/us-states.csv"
@@ -45,11 +60,27 @@ refresh_covid19nytimes_states <- function(){
 
 #' US County Data from the NY Times
 #'
-#' @return
-#' @export
+#' @description Update the county-level data from the New York Times on Covid-19
+#'
+#' @details Pulls from the open source data at https://www.nytimes.com/article/coronavirus-county-data-us.html
+#' including cummulative cases and deaths. Returns the data in the covid19R standard tidy format for easy use.
+#' Location data is returned as `County,State`.
+#' See https://github.com/nytimes/covid-19-data for extensive methodology description and license.
+#'
+#' @source New York Times, "We’re Sharing Coronavirus Case Data for Every U.S. County" \href{https://www.nytimes.com/article/coronavirus-county-data-us.html}{article} and {https://github.com/nytimes/covid-19-data}{data repository}
+#' @source \href{https://github.com/Covid19R/documentation}{covid19R documentation}
+#'
+#' @return A tibble object
+#' @export refresh_covid19nytimes_counties
 #'
 #' @examples
-"refresh_covid19nytimes_counties"
+#'\dontrun{
+#'
+#' # update with a question prompt
+#' covid19nytimes_counties <- refresh_covid19nytimes_counties()
+#'
+#'
+#' }
 
 refresh_covid19nytimes_counties <- function(){
   url <- "https://raw.githubusercontent.com/nytimes/covid-19-data/master/us-counties.csv"
