@@ -1,0 +1,6 @@
+pandoc: 2.3.1
+pkgdown: 1.4.1
+pkgdown_sha: ~
+articles:
+  ny-times-bubble-map: ny-times-bubble-map.html
+
