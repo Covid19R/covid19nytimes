@@ -11,7 +11,9 @@ Description: This package access the NY Times Covid-19 county-level data for the
 License: See https://github.com/nytimes/covid-19-data/blob/master/LICENSE
 Suggests: 
     testthat,
-    ggplot2
+    ggplot2,
+    knitr,
+    rmarkdown
 Depends:
   R (>= 3.0.2)
 Encoding: UTF-8
@@ -26,3 +28,4 @@ Imports:
     tidyr,
     dplyr,
     tibble
+VignetteBuilder: knitr
