@@ -13,6 +13,15 @@ refresh_covid19nytimes_states()
 }
 \value{
 A tibble object
+\itemize{
+\item date - The date in YYYY-MM-DD form
+\item location - The name of the location as provided by the data source. The counties dataset provides county and state. They are combined and separated by a \verb{,}, and can be split by \code{tidyr::separate()}, if you wish.
+\item location_type - The type of location using the covid19R controlled vocabulary. Nested locations are indicated by multiple location types being combined with a `_
+\item location_standardized - A standardized location code using a national or international standard. In this case, FIPS state or county codes. See https://en.wikipedia.org/wiki/Federal_Information_Processing_Standard_state_code and https://en.wikipedia.org/wiki/FIPS_county_code for more
+\item location_standardized_type The type of standardized location code being used according to the covid19R controlled vocabulary. Here we use \code{fips_code}
+\item data_type - the type of data in that given row. Includes \code{total_cases} and \code{total_deaths}, cummulative measures of both.
+\item value - number of cases of each data type
+}
 }
 \description{
 Update the state-level data from the New York Times on Covid-19

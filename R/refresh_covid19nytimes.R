@@ -10,6 +10,13 @@
 #' @source \href{https://github.com/Covid19R/documentation}{covid19R documentation}
 #'
 #' @return A tibble object
+#' * date - The date in YYYY-MM-DD form
+#' * location - The name of the location as provided by the data source. The counties dataset provides county and state. They are combined and separated by a `,`, and can be split by `tidyr::separate()`, if you wish.
+#' * location_type - The type of location using the covid19R controlled vocabulary. Nested locations are indicated by multiple location types being combined with a `_
+#' * location_standardized - A standardized location code using a national or international standard. In this case, FIPS state or county codes. See https://en.wikipedia.org/wiki/Federal_Information_Processing_Standard_state_code and https://en.wikipedia.org/wiki/FIPS_county_code for more
+#' * location_standardized_type The type of standardized location code being used according to the covid19R controlled vocabulary. Here we use `fips_code`
+#' * data_type - the type of data in that given row. Includes `total_cases` and `total_deaths`, cummulative measures of both.
+#' * value - number of cases of each data type
 #' @export refresh_covid19nytimes_states
 #'
 #' @examples
@@ -71,6 +78,13 @@ refresh_covid19nytimes_states <- function(){
 #' @source \href{https://github.com/Covid19R/documentation}{covid19R documentation}
 #'
 #' @return A tibble object
+#' * date - The date in YYYY-MM-DD form
+#' * location - The name of the location as provided by the data source. The counties dataset provides county and state. They are combined and separated by a `,`, and can be split by `tidyr::separate()`, if you wish.
+#' * location_type - The type of location using the covid19R controlled vocabulary. Nested locations are indicated by multiple location types being combined with a `_
+#' * location_standardized - A standardized location code using a national or international standard. In this case, FIPS state or county codes. See https://en.wikipedia.org/wiki/Federal_Information_Processing_Standard_state_code and https://en.wikipedia.org/wiki/FIPS_county_code for more
+#' * location_standardized_type The type of standardized location code being used according to the covid19R controlled vocabulary. Here we use `fips_code`
+#' * data_type - the type of data in that given row. Includes `total_cases` and `total_deaths`, cummulative measures of both.
+#' * value - number of cases of each data type
 #' @export refresh_covid19nytimes_counties
 #'
 #' @examples
