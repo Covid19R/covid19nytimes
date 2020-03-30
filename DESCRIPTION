@@ -8,10 +8,12 @@ Authors@R:
            email = "jarrett.byrnes@umb.edu",
            comment = c(ORCID = "0000-0002-9791-9472"))
 Description: This package access the NY Times Covid-19 county-level data for the US, described in https://www.nytimes.com/article/coronavirus-county-data-us.html and available at https://github.com/nytimes/covid-19-data. It then returns the data in a tidy data format accordin to the covid19R data specification.
-License: https://github.com/nytimes/covid-19-data/blob/master/LICENSE
+License: See https://github.com/nytimes/covid-19-data/blob/master/LICENSE
 Suggests: 
     testthat,
     ggplot2
+Depends:
+  R (>= 3.0.2)
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
@@ -22,4 +24,5 @@ Imports:
     magrittr,
     readr,
     tidyr,
-    dplyr
+    dplyr,
+    tibble

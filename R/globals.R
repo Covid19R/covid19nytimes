@@ -20,6 +20,12 @@ globalVariables(
     #unique to this dataset
     "cases",
     "cases_total",
-    "deaths_total"
+    "deaths_total",
+    "county",
+    "state",
+    "fips",
+    "county_state",
+    "fips_code",
+    "deaths"
   )
 )
