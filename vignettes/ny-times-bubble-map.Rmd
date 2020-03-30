@@ -18,8 +18,8 @@ The NY Times has been making an amazing [infographic of Covid-19 cases](https://
 
 We'll start by loading the coronavirus data at the county and state level
 ```{r setup, message=FALSE}
-library(covid19nytimes)
-library(dplyr)
+require(covid19nytimes)
+require(dplyr)
 
 covid19nytimes_states <- refresh_covid19nytimes_states()
 covid19nytimes_counties <- refresh_covid19nytimes_counties()
@@ -28,8 +28,8 @@ covid19nytimes_counties <- refresh_covid19nytimes_counties()
 Next, we need some county maps and state maps. For this, we'll use the excellent [USAboundaries](https://cran.r-project.org/web/packages/USAboundaries/index.html) package. We want the centroid of counties for bubble placement.
 
 ```{r get_counties, warning=FALSE, message=FALSE}
-library(USAboundaries)
-library(sf)
+require(sf)
+require(USAboundaries)
 
 county_map <- us_counties() %>%
   st_centroid()
@@ -84,7 +84,7 @@ joined_covid_counties <- covid19nytimes_counties %>%
 Last, let's make the plot!
 
 ```{r plot, warning=FALSE, fig.width = 10, fig.height = 8}
-library(ggplot2)
+require(ggplot2)
 
 ggplot() +
   geom_sf(data = state_map, fill = "lightgrey", color = "darkgrey") +
