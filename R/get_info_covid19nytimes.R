@@ -18,8 +18,8 @@ get_info_covid19nytimes <- function(){
   tibble::tribble(
     ~data_set_name, ~package_name, ~function_to_get_data,
     ~data_details, ~data_url, ~license_url,
-    ~data_types,  ~has_geospatial_info,
-    ~spatial_extent,
+    ~data_types, ~location_types,
+    ~spatial_extent, ~has_geospatial_info,
 
     "covid19nytimes_states",
     "covid19nytimes",
@@ -28,8 +28,9 @@ get_info_covid19nytimes <- function(){
     "https://raw.githubusercontent.com/nytimes/covid-19-data/master/us-counties.csv",
     "https://github.com/nytimes/covid-19-data/blob/master/LICENSE",
     "cases_total, deaths_total",
-    FALSE,
+    "state",
     "country",
+    FALSE,
 
     "covid19nytimes_counties",
     "covid19nytimes",
@@ -38,8 +39,9 @@ get_info_covid19nytimes <- function(){
     "https://raw.githubusercontent.com/nytimes/covid-19-data/master/us-counties.csv",
     "https://github.com/nytimes/covid-19-data/blob/master/LICENSE",
     "cases_total, deaths_total",
-    FALSE,
-    "country"
+    "county, state",
+    "country",
+    FALSE
 
 
   )
