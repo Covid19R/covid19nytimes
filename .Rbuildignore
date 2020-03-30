@@ -8,3 +8,4 @@
 ^data-raw$
 setupcode.R
 testcode.R
+^\.travis\.yml$

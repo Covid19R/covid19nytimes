@@ -3,3 +3,4 @@
 .RData
 setupcode.R
 testcode.R
+inst/doc
