@@ -7,7 +7,7 @@
 get_info_covid19nytimes()
 }
 \value{
-a tibble of information about the datasets in this apckage
+a tibble of information about the datasets in this package
 }
 \description{
 Returns information about the datasets in this package for covid19R harvesting

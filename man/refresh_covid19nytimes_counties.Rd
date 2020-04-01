@@ -19,7 +19,7 @@ A tibble object
 \item location_type - The type of location using the covid19R controlled vocabulary. Nested locations are indicated by multiple location types being combined with a `_
 \item location_standardized - A standardized location code using a national or international standard. In this case, FIPS state or county codes. See https://en.wikipedia.org/wiki/Federal_Information_Processing_Standard_state_code and https://en.wikipedia.org/wiki/FIPS_county_code for more
 \item location_standardized_type The type of standardized location code being used according to the covid19R controlled vocabulary. Here we use \code{fips_code}
-\item data_type - the type of data in that given row. Includes \code{total_cases} and \code{total_deaths}, cummulative measures of both.
+\item data_type - the type of data in that given row. Includes \code{total_cases} and \code{total_deaths}, cumulative measures of both.
 \item value - number of cases of each data type
 }
 }
@@ -28,7 +28,7 @@ Update the county-level data from the New York Times on Covid-19
 }
 \details{
 Pulls from the open source data at https://www.nytimes.com/article/coronavirus-county-data-us.html
-including cummulative cases and deaths. Returns the data in the covid19R standard tidy format for easy use.
+including cumulative cases and deaths. Returns the data in the covid19R standard tidy format for easy use.
 Location data is returned as \verb{County,State}.
 See https://github.com/nytimes/covid-19-data for extensive methodology description and license.
 }
