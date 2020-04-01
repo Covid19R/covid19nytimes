@@ -2,7 +2,7 @@
 #'
 #' @description Returns information about the datasets in this package for covid19R harvesting
 #'
-#' @return a tibble of information about the datasets in this apckage
+#' @return a tibble of information about the datasets in this package
 #' @export get_info_covid19nytimes
 #'
 #' @examples
