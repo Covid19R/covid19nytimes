@@ -9,6 +9,8 @@
 experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
 [![CRAN
 status](https://www.r-pkg.org/badges/version/covid19nytimes)](https://CRAN.R-project.org/package=covid19nytimes)
+[![Travis build
+status](https://travis-ci.org/Covid19R/covid19nytimes.svg?branch=master)](https://travis-ci.org/Covid19R/covid19nytimes)
 <!-- badges: end -->
 
 The covid19nytimes package harvests the data made freely available by
@@ -99,7 +101,7 @@ columns are as follows:
     being used according to the covid19R controlled vocabulary. Here we
     use `fips_code`
   - data\_type - the type of data in that given row. Includes
-    `total_cases` and `total_deaths`, cummulative measures of both.
+    `total_cases` and `total_deaths`, cumulative measures of both.
   - value - number of cases of each data type
 
 ## Sample visualization
