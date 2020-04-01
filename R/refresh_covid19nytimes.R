@@ -3,7 +3,7 @@
 #' @description Update the state-level data from the New York Times on Covid-19
 #'
 #' @details Pulls from the open source data at https://www.nytimes.com/article/coronavirus-county-data-us.html
-#' including cummulative cases and deaths. Returns the data in the covid19R standard tidy format for easy use.
+#' including cumulative cases and deaths. Returns the data in the covid19R standard tidy format for easy use.
 #' See https://github.com/nytimes/covid-19-data for extensive methodology description and license.
 #'
 #' @source New York Times, "We’re Sharing Coronavirus Case Data for Every U.S. County" \href{https://www.nytimes.com/article/coronavirus-county-data-us.html}{article} and {https://github.com/nytimes/covid-19-data}{data repository}
@@ -15,7 +15,7 @@
 #' * location_type - The type of location using the covid19R controlled vocabulary. Nested locations are indicated by multiple location types being combined with a `_
 #' * location_standardized - A standardized location code using a national or international standard. In this case, FIPS state or county codes. See https://en.wikipedia.org/wiki/Federal_Information_Processing_Standard_state_code and https://en.wikipedia.org/wiki/FIPS_county_code for more
 #' * location_standardized_type The type of standardized location code being used according to the covid19R controlled vocabulary. Here we use `fips_code`
-#' * data_type - the type of data in that given row. Includes `total_cases` and `total_deaths`, cummulative measures of both.
+#' * data_type - the type of data in that given row. Includes `total_cases` and `total_deaths`, cumulative measures of both.
 #' * value - number of cases of each data type
 #' @export refresh_covid19nytimes_states
 #'
@@ -70,7 +70,7 @@ refresh_covid19nytimes_states <- function(){
 #' @description Update the county-level data from the New York Times on Covid-19
 #'
 #' @details Pulls from the open source data at https://www.nytimes.com/article/coronavirus-county-data-us.html
-#' including cummulative cases and deaths. Returns the data in the covid19R standard tidy format for easy use.
+#' including cumulative cases and deaths. Returns the data in the covid19R standard tidy format for easy use.
 #' Location data is returned as `County,State`.
 #' See https://github.com/nytimes/covid-19-data for extensive methodology description and license.
 #'
@@ -83,7 +83,7 @@ refresh_covid19nytimes_states <- function(){
 #' * location_type - The type of location using the covid19R controlled vocabulary. Nested locations are indicated by multiple location types being combined with a `_
 #' * location_standardized - A standardized location code using a national or international standard. In this case, FIPS state or county codes. See https://en.wikipedia.org/wiki/Federal_Information_Processing_Standard_state_code and https://en.wikipedia.org/wiki/FIPS_county_code for more
 #' * location_standardized_type The type of standardized location code being used according to the covid19R controlled vocabulary. Here we use `fips_code`
-#' * data_type - the type of data in that given row. Includes `total_cases` and `total_deaths`, cummulative measures of both.
+#' * data_type - the type of data in that given row. Includes `total_cases` and `total_deaths`, cumulative measures of both.
 #' * value - number of cases of each data type
 #' @export refresh_covid19nytimes_counties
 #'
