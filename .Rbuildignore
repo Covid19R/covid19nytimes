@@ -10,3 +10,4 @@
 setupcode.R
 testcode.R
 ^\.travis\.yml$
+^CRAN-RELEASE$
