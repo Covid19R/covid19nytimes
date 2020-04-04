@@ -9,3 +9,6 @@ addons:
       - gdal-bin
       - libgdal1-dev
       - libproj-dev
+
+before_install:
+  - R -q -e 'remotes::install_github("ropensci/USAboundariesData"); print(tic::dsl_load()); tic::prepare_all_stages()'
