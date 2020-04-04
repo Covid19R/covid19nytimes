@@ -16,7 +16,7 @@ knitr::opts_chunk$set(
 # covid19nytimes
 
 <!-- badges: start -->
-[![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
+[![Lifecycle: maturing](https://img.shields.io/badge/lifecycle-maturing-orange.svg)](https://www.tidyverse.org/lifecycle/#maturing)
 [![CRAN status](https://www.r-pkg.org/badges/version/covid19nytimes)](https://CRAN.R-project.org/package=covid19nytimes)
 [![Travis build status](https://travis-ci.org/Covid19R/covid19nytimes.svg?branch=master)](https://travis-ci.org/Covid19R/covid19nytimes)
 <!-- badges: end -->
