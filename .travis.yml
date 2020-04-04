@@ -6,3 +6,6 @@ addons:
   apt:
     packages:
       - libudunits2-dev
+      - gdal-bin
+      - libgdal1-dev
+      - libproj-dev
