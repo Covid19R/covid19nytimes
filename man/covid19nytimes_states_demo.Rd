@@ -30,8 +30,8 @@ require(dplyr)
 
 # Get top confirmed cases by state
 covid19nytimes_states_demo \%>\%
- filter(data_type == "cases_total") \%>\%
- filter(value == max(value))
+  filter(data_type == "cases_total") \%>\%
+  filter(value == max(value))
 }
 \keyword{COVID19}
 \keyword{coronavirus}

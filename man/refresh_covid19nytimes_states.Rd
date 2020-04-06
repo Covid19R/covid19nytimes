@@ -33,10 +33,8 @@ See https://github.com/nytimes/covid-19-data for extensive methodology descripti
 }
 \examples{
 \dontrun{
-
-#update the data
+# update the data
 covid19nytimes_states <- refresh_covid19nytimes_states()
-
-
 }
+
 }

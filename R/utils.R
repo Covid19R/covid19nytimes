@@ -27,7 +27,7 @@ reshape_raw <- function(tbl, location_col) {
       data_type, value
     ) %>%
     dplyr::arrange(
-      desc(date), location
+      dplyr::desc(date), location
     )
 }
 
