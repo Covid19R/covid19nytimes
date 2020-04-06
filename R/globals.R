@@ -1,6 +1,6 @@
 globalVariables(
   c(
-    #standard for all datasets
+    # standard for all datasets
     "date",
     "location",
     "location_type",
@@ -17,7 +17,7 @@ globalVariables(
     "data_types",
     "has_geospatial_info",
 
-    #unique to this dataset
+    # unique to this dataset
     "cases",
     "cases_total",
     "deaths_total",

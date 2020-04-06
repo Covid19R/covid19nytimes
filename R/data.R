@@ -18,8 +18,8 @@
 #'
 #' # Get top confirmed cases by state
 #' covid19nytimes_states_demo %>%
-#'  filter(data_type == "cases_total") %>%
-#'  filter(value == max(value))
+#'   filter(data_type == "cases_total") %>%
+#'   filter(value == max(value))
 "covid19nytimes_states_demo"
 
 
@@ -43,6 +43,6 @@
 #'
 #' # Get top confirmed cases by county,state
 #' covid19nytimes_states_demo %>%
-#'  filter(data_type == "cases_total") %>%
-#'  filter(value == max(value))
+#'   filter(data_type == "cases_total") %>%
+#'   filter(value == max(value))
 "covid19nytimes_counties_demo"
