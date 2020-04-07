@@ -1,4 +1,4 @@
-# covid19nytimes 0.1.1
+# covid19nytimes 0.1.2
 * Added tests
 
 # covid19nytimes 0.1.1
