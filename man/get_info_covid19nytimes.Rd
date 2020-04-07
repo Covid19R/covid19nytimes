@@ -15,9 +15,8 @@ Returns information about the datasets in this package for covid19R harvesting
 \examples{
 \dontrun{
 
-#get the dataset info from this package
+# get the dataset info from this package
 get_info_covid19nytimes()
-
-
 }
+
 }
