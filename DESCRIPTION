@@ -1,7 +1,7 @@
 Package: covid19nytimes
 Title: Pulls the Covid-19 Data from the New York Times Public
     Data Source
-Version: 0.1.1
+Version: 0.1.2
 Authors@R: 
     person(given = "Jarrett",
            family = "Byrnes",
