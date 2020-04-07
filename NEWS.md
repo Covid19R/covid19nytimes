@@ -1,4 +1,7 @@
 # covid19nytimes 0.1.1
+* Added tests
+
+# covid19nytimes 0.1.1
 * Added location_types to `get_info_covid19nytimes()`  
 
 # covid19nytimes 0.1.0
