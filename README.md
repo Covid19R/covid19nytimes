@@ -92,14 +92,14 @@ columns are as follows:
   - location\_type - The type of location using the covid19R controlled
     vocabulary. Nested locations are indicated by multiple location
     types being combined with a \`\_
-  - location\_standardized - A standardized location code using a
-    national or international standard. In this case, FIPS state or
-    county codes. See
+  - location\_code - A standardized location code using a national or
+    international standard. In this case, FIPS state or county codes.
+    See
     <https://en.wikipedia.org/wiki/Federal_Information_Processing_Standard_state_code>
     and <https://en.wikipedia.org/wiki/FIPS_county_code> for more
-  - location\_standardized\_type The type of standardized location code
-    being used according to the covid19R controlled vocabulary. Here we
-    use `fips_code`
+  - location\_code\_type The type of standardized location code being
+    used according to the covid19R controlled vocabulary. Here we use
+    `fips_code`
   - data\_type - the type of data in that given row. Includes
     `total_cases` and `total_deaths`, cumulative measures of both.
   - value - number of cases of each data type

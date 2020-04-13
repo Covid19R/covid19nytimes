@@ -17,13 +17,13 @@ reshape_raw <- function(tbl, location_col) {
     ) %>%
     tidyr::pivot_longer(
       cols = fips_code,
-      names_to = "location_standardized_type",
-      values_to = "location_standardized"
+      names_to = "location_code_type",
+      values_to = "location_code"
     ) %>%
     dplyr::select(
       date,
       location, location_type,
-      location_standardized, location_standardized_type,
+      location_code, location_code_type,
       data_type, value
     ) %>%
     dplyr::arrange(
