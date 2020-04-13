@@ -26,6 +26,6 @@ test_that("counties works", {
   expect_named(res, refresh_col_names)
 
   expect_true(
-    "Kings,New York" %in% unique(res$location)
+    "Westchester,New York" %in% unique(res$location)
   )
 })
