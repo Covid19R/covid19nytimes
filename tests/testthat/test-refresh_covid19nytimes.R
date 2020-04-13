@@ -2,8 +2,8 @@ refresh_col_names <-
   c("date",
     "location",
     "location_type",
-    "location_standardized",
-    "location_standardized_type",
+    "location_code",
+    "location_code_type",
     "data_type",
     "value"
   )
