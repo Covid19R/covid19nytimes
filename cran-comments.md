@@ -5,7 +5,7 @@
 
 ## R CMD check results
 
-── R CMD check results ──── covid19nytimes 0.1.1 ────
+── R CMD check results ──── covid19nytimes 0.1.2 ────
 0 errors ✓ | 0 warnings ✓ | 0 notes ✓
 
 
