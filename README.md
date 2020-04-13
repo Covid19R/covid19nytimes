@@ -46,28 +46,28 @@ library(covid19nytimes)
 head(covid19nytimes_states_demo) %>% knitr::kable()
 ```
 
-| date       | location   | location\_type | location\_standardized | location\_standardized\_type | data\_type    | value |
-| :--------- | :--------- | :------------- | :--------------------- | :--------------------------- | :------------ | ----: |
-| 2020-01-21 | Washington | state          | 53                     | fips\_code                   | cases\_total  |     1 |
-| 2020-01-21 | Washington | state          | 53                     | fips\_code                   | deaths\_total |     0 |
-| 2020-01-22 | Washington | state          | 53                     | fips\_code                   | cases\_total  |     1 |
-| 2020-01-22 | Washington | state          | 53                     | fips\_code                   | deaths\_total |     0 |
-| 2020-01-23 | Washington | state          | 53                     | fips\_code                   | cases\_total  |     1 |
-| 2020-01-23 | Washington | state          | 53                     | fips\_code                   | deaths\_total |     0 |
+| date       | location       | location\_type | location\_code | location\_code\_type | data\_type    | value |
+| :--------- | :------------- | :------------- | :------------- | :------------------- | :------------ | ----: |
+| 2020-04-12 | Alabama        | state          | 01             | fips\_code           | cases\_total  |  3583 |
+| 2020-04-12 | Alabama        | state          | 01             | fips\_code           | deaths\_total |    93 |
+| 2020-04-12 | Alaska         | state          | 02             | fips\_code           | cases\_total  |   270 |
+| 2020-04-12 | Alaska         | state          | 02             | fips\_code           | deaths\_total |     6 |
+| 2020-04-12 | American Samoa | state          | 60             | fips\_code           | cases\_total  |     0 |
+| 2020-04-12 | American Samoa | state          | 60             | fips\_code           | deaths\_total |     0 |
 
 ``` r
 
 head(covid19nytimes_counties_demo) %>% knitr::kable()
 ```
 
-| date       | location             | location\_type | location\_standardized | location\_standardized\_type | data\_type    | value |
-| :--------- | :------------------- | :------------- | :--------------------- | :--------------------------- | :------------ | ----: |
-| 2020-01-21 | Snohomish,Washington | county\_state  | 53061                  | fips\_code                   | cases\_total  |     1 |
-| 2020-01-21 | Snohomish,Washington | county\_state  | 53061                  | fips\_code                   | deaths\_total |     0 |
-| 2020-01-22 | Snohomish,Washington | county\_state  | 53061                  | fips\_code                   | cases\_total  |     1 |
-| 2020-01-22 | Snohomish,Washington | county\_state  | 53061                  | fips\_code                   | deaths\_total |     0 |
-| 2020-01-23 | Snohomish,Washington | county\_state  | 53061                  | fips\_code                   | cases\_total  |     1 |
-| 2020-01-23 | Snohomish,Washington | county\_state  | 53061                  | fips\_code                   | deaths\_total |     0 |
+| date       | location                 | location\_type | location\_code | location\_code\_type | data\_type    | value |
+| :--------- | :----------------------- | :------------- | :------------- | :------------------- | :------------ | ----: |
+| 2020-04-12 | Abbeville,South Carolina | county\_state  | 45001          | fips\_code           | cases\_total  |     9 |
+| 2020-04-12 | Abbeville,South Carolina | county\_state  | 45001          | fips\_code           | deaths\_total |     0 |
+| 2020-04-12 | Acadia,Louisiana         | county\_state  | 22001          | fips\_code           | cases\_total  |    99 |
+| 2020-04-12 | Acadia,Louisiana         | county\_state  | 22001          | fips\_code           | deaths\_total |     5 |
+| 2020-04-12 | Accomack,Virginia        | county\_state  | 51001          | fips\_code           | cases\_total  |    15 |
+| 2020-04-12 | Accomack,Virginia        | county\_state  | 51001          | fips\_code           | deaths\_total |     0 |
 
 ## Getting the Most Up to Date Data
 

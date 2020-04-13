@@ -69,7 +69,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">covid19nytimes</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.1.1</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.1.2</span>
       </span>
     </div>
 
@@ -142,8 +142,8 @@
 <li><p>date - The date in YYYY-MM-DD form</p></li>
 <li><p>location - The name of the location as provided by the data source. The counties dataset provides county and state. They are combined and separated by a <code>,</code>, and can be split by <code><a href='https://tidyr.tidyverse.org/reference/separate.html'>tidyr::separate()</a></code>, if you wish.</p></li>
 <li><p>location_type - The type of location using the covid19R controlled vocabulary. Nested locations are indicated by multiple location types being combined with a `_</p></li>
-<li><p>location_standardized - A standardized location code using a national or international standard. In this case, FIPS state or county codes. See https://en.wikipedia.org/wiki/Federal_Information_Processing_Standard_state_code and https://en.wikipedia.org/wiki/FIPS_county_code for more</p></li>
-<li><p>location_standardized_type The type of standardized location code being used according to the covid19R controlled vocabulary. Here we use <code>fips_code</code></p></li>
+<li><p>location_code - A standardized location code using a national or international standard. In this case, FIPS state or county codes. See https://en.wikipedia.org/wiki/Federal_Information_Processing_Standard_state_code and https://en.wikipedia.org/wiki/FIPS_county_code for more</p></li>
+<li><p>location_code_type The type of standardized location code being used according to the covid19R controlled vocabulary. Here we use <code>fips_code</code></p></li>
 <li><p>data_type - the type of data in that given row. Includes <code>total_cases</code> and <code>total_deaths</code>, cumulative measures of both.</p></li>
 <li><p>value - number of cases of each data type</p></li>
 </ul>
@@ -156,11 +156,8 @@ See https://github.com/nytimes/covid-19-data for extensive methodology descripti
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'><span class='kw'>if</span> (<span class='fl'>FALSE</span>) {
-
-<span class='co'>#update the data</span>
+<span class='co'># update the data</span>
 <span class='no'>covid19nytimes_states</span> <span class='kw'>&lt;-</span> <span class='fu'>refresh_covid19nytimes_states</span>()
-
-
 }</div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">

@@ -4,6 +4,7 @@
 
 setwd(here::here())
 source("./R/refresh_covid19nytimes.R")
+source("./R/utils.R")
 
 covid19nytimes_states_demo <- refresh_covid19nytimes_states()
 covid19nytimes_counties_demo <- refresh_covid19nytimes_counties()
