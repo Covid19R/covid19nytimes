@@ -65,7 +65,7 @@ state_num_centroids <- covid19nytimes_states %>%
   filter(date == max(date)) %>%
   filter(data_type == "cases_total") %>%
   left_join(state_map,
-            by = c("location_standardized" = "geoid")) %>%
+            by = c("location_code" = "geoid")) %>%
   st_as_sf(crs = st_crs(state_map)) %>%
   st_centroid()
 ```
@@ -77,7 +77,7 @@ joined_covid_counties <- covid19nytimes_counties %>%
   filter(date == max(date)) %>%
   filter(data_type == "cases_total") %>%
   left_join(county_map,
-            by = c("location_standardized" = "geoid")) %>%
+            by = c("location_code" = "geoid")) %>%
   st_as_sf(crs = st_crs(county_map))
 ```
 
