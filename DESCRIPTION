@@ -34,7 +34,6 @@ Suggests:
     sf (>= 0.8.1),
     stringr (>= 1.4.0),
     testthat (>= 2.3.1),
-    USAboundaries (>= 0.3.1),
     tigris
 VignetteBuilder: 
     knitr

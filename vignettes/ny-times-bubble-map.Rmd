@@ -28,7 +28,7 @@ covid19nytimes_counties <- refresh_covid19nytimes_counties()%>%
     filter(date == max(date)) 
 ```
 
-Next, we need some county maps and state maps. For this, we'll use the excellent [USAboundaries](https://cran.r-project.org/web/packages/USAboundaries/index.html) package. We want the centroid of counties for bubble placement.
+Next, we need some county maps and state maps. For this, we'll use the excellent [tigris](https://cran.r-project.org/web/packages/tigris/index.html) package. We want the centroid of counties for bubble placement.
 
 ```{r get_counties, warning=FALSE, message=FALSE, results="hide"}
 require(sf)
@@ -96,7 +96,7 @@ joined_covid_counties <- covid19nytimes_counties %>%
 Last, let's make the plot!
 
 ```{r plot, warning=FALSE, fig.width = 10, fig.height = 8}
-library(ggplot2)
+require(ggplot2)
 
 ggplot() +
   geom_sf(data = state_map, fill = "lightgrey", color = "darkgrey") +
