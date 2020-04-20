@@ -1,5 +1,6 @@
 refresh_col_names <-
-  c("date",
+  c(
+    "date",
     "location",
     "location_type",
     "location_code",
@@ -9,7 +10,6 @@ refresh_col_names <-
   )
 
 test_that("states works", {
-
   res <- refresh_covid19nytimes_states()
 
   expect_named(res, refresh_col_names)
@@ -20,7 +20,6 @@ test_that("states works", {
 })
 
 test_that("counties works", {
-
   res <- refresh_covid19nytimes_counties()
 
   expect_named(res, refresh_col_names)

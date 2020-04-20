@@ -29,7 +29,9 @@ Update the state-level data from the New York Times on Covid-19
 \details{
 Pulls from the open source data at https://www.nytimes.com/article/coronavirus-county-data-us.html
 including cumulative cases and deaths. Returns the data in the covid19R standard tidy format for easy use.
-See https://github.com/nytimes/covid-19-data for extensive methodology description and license.
+See https://github.com/nytimes/covid-19-data for extensive methodology description and license. Please
+follow the license guidelines at https://github.com/nytimes/covid-19-data/blob/master/LICENSE if you plan
+to use the data for public display.
 }
 \examples{
 \dontrun{
