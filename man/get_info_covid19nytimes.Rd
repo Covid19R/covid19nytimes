@@ -10,7 +10,8 @@ get_info_covid19nytimes()
 a tibble of information about the datasets in this package
 }
 \description{
-Returns information about the datasets in this package for covid19R harvesting
+Returns information about the datasets in this package for
+covid19R harvesting
 }
 \examples{
 \dontrun{

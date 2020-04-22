@@ -8,17 +8,21 @@
 A tibble object
 }
 \source{
-New York Times, "We’re Sharing Coronavirus Case Data for Every U.S. County" \href{https://www.nytimes.com/article/coronavirus-county-data-us.html}{article} and {https://github.com/nytimes/covid-19-data}{data repository}
+New York Times, "We’re Sharing Coronavirus Case Data for Every U.S.
+County"
+\href{https://www.nytimes.com/article/coronavirus-county-data-us.html}{article}
+and {https://github.com/nytimes/covid-19-data}{data repository}
 }
 \usage{
 covid19nytimes_counties_demo
 }
 \description{
-demo of the daily summary of the Coronavirus (COVID-19) total cases and deaths by county
+demo of the daily summary of the Coronavirus (COVID-19) total
+cases and deaths by county
 }
 \details{
-The dataset contains the daily summary of Coronavirus cases (total confirmed and total deaths), by county
-from the NY Times.
+The dataset contains the daily summary of Coronavirus cases (total
+confirmed and total deaths), by county from the NY Times.
 
 To get the latest data, use \code{\link{refresh_covid19nytimes_states}}.
 }
