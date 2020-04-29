@@ -11,41 +11,44 @@ refresh_col_names <-
   )
 
 
-location_types <- read.csv("https://github.com/Covid19R/covid19R_data/raw/master/controlled_vocabularies/location_type.csv", stringsAsFactors = FALSE)[,1]
-location_code_types <- read.csv("https://github.com/Covid19R/covid19R_data/raw/master/controlled_vocabularies/location_code_type.csv", stringsAsFactors = FALSE)[,1]
-data_types <- read.csv("https://github.com/Covid19R/covid19R_data/raw/master/controlled_vocabularies/data_type.csv", stringsAsFactors = FALSE)[,1]
+location_types <- read.csv("https://github.com/Covid19R/covid19R_data/raw/master/controlled_vocabularies/location_type.csv", stringsAsFactors = FALSE)[, 1]
+location_code_types <- read.csv("https://github.com/Covid19R/covid19R_data/raw/master/controlled_vocabularies/location_code_type.csv", stringsAsFactors = FALSE)[, 1]
+data_types <- read.csv("https://github.com/Covid19R/covid19R_data/raw/master/controlled_vocabularies/data_type.csv", stringsAsFactors = FALSE)[, 1]
 
-#helper function
+# helper function
 
-expect_contains <- function(vec1, vec2){
+expect_contains <- function(vec1, vec2) {
   vec1 <- unique(vec1)
 
-  expect(all(vec1 %in% vec2),
-         paste0("Some or all values of ",
-                paste0(vec1, collapse = ","),
-                "\ndo not match ",
-                paste0(vec2, collapse = ","),
-                "\nIf this is a new controlled vocabulary entry ",
-                "please file an issue at\nhttps://github.com/Covid19R/covid19R/issues"
-         ))
+  expect(
+    all(vec1 %in% vec2),
+    paste0(
+      "Some or all values of ",
+      paste0(vec1, collapse = ","),
+      "\ndo not match ",
+      paste0(vec2, collapse = ","),
+      "\nIf this is a new controlled vocabulary entry ",
+      "please file an issue at\nhttps://github.com/Covid19R/covid19R/issues"
+    )
+  )
 }
 
 test_that("states works", {
   res <- refresh_covid19nytimes_states()
 
-  #make sure there's there there
+  # make sure there's there there
   expect_gt(nrow(res), 0)
 
-  #make sure column names are in order
+  # make sure column names are in order
   expect_named(res, refresh_col_names)
 
-  #loc types
+  # loc types
   expect_contains(res$location_type, location_types)
 
-  #loc codes
+  # loc codes
   expect_contains(res$location_code_type, location_code_types)
 
-  #dat types
+  # dat types
   expect_contains(res$data_type, data_types)
 
 
@@ -57,19 +60,19 @@ test_that("states works", {
 test_that("counties works", {
   res <- refresh_covid19nytimes_counties()
 
-  #make sure there's there there
+  # make sure there's there there
   expect_gt(nrow(res), 0)
 
-  #make sure column names are in order
+  # make sure column names are in order
   expect_named(res, refresh_col_names)
 
-  #loc types
+  # loc types
   expect_contains(res$location_type, location_types)
 
-  #loc codes
+  # loc codes
   expect_contains(res$location_code_type, location_code_types)
 
-  #dat types
+  # dat types
   expect_contains(res$data_type, data_types)
 
   expect_true(
