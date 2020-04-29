@@ -1,3 +1,6 @@
+# covid19nytimes 0.1.3
+* fixed location_type column in counties data to meet data standard
+
 # covid19nytimes 0.1.2
 * Added tests
 * Changed location_standardized to location_code
