@@ -24,7 +24,9 @@ expect_contains <- function(vec1, vec2){
          paste0("Some or all values of ",
                 paste0(vec1, collapse = ","),
                 "\ndo not match ",
-                paste0(vec2, collapse = ",")
+                paste0(vec2, collapse = ","),
+                "\nIf this is a new controlled vocabulary entry ",
+                "please file an issue at\nhttps://github.com/Covid19R/covid19R/issues"
          ))
 }
 
