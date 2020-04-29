@@ -17,7 +17,7 @@ and {https://github.com/nytimes/covid-19-data}{data repository}
 covid19nytimes_states_demo
 }
 \description{
-demo of the daily summary of the Coronavirus (COVID-19) total
+demo of the daily summary of the Coronavirus (Covid-19) total
 cases and deaths by state.
 }
 \details{
@@ -37,7 +37,7 @@ covid19nytimes_states_demo \%>\%
   filter(data_type == "cases_total") \%>\%
   filter(value == max(value))
 }
-\keyword{COVID19}
 \keyword{coronavirus}
+\keyword{covid19}
 \keyword{covid19nytimes_states}
 \keyword{datasets}

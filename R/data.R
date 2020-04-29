@@ -1,6 +1,6 @@
 #' Demo of US State Data from the NY Times
 #'
-#' @description demo of the daily summary of the Coronavirus (COVID-19) total
+#' @description demo of the daily summary of the Coronavirus (Covid-19) total
 #'   cases and deaths by state.
 #'
 #'
@@ -9,7 +9,7 @@
 #'   County"
 #'   \href{https://www.nytimes.com/article/coronavirus-county-data-us.html}{article}
 #'   and {https://github.com/nytimes/covid-19-data}{data repository}
-#' @keywords datasets coronavirus COVID19 covid19nytimes_states
+#' @keywords datasets coronavirus covid19 covid19nytimes_states
 #' @details The dataset contains the daily summary of Coronavirus cases (total
 #'   confirmed and total deaths), by state from the NY Times.
 #'
@@ -29,7 +29,7 @@
 
 #' Demo of US County-Level Data from the NY Times
 #'
-#' @description  demo of the daily summary of the Coronavirus (COVID-19) total
+#' @description  demo of the daily summary of the Coronavirus (Covid-19) total
 #'   cases and deaths by county
 #'
 #'

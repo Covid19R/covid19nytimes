@@ -17,7 +17,7 @@ and {https://github.com/nytimes/covid-19-data}{data repository}
 covid19nytimes_counties_demo
 }
 \description{
-demo of the daily summary of the Coronavirus (COVID-19) total
+demo of the daily summary of the Coronavirus (Covid-19) total
 cases and deaths by county
 }
 \details{
