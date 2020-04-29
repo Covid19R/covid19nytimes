@@ -5,8 +5,9 @@
 
 ## R CMD check results
 
-── R CMD check results ──── covid19nytimes 0.1.2 ────
+── R CMD check results ──── covid19nytimes 0.1.3 ────
 0 errors ✓ | 0 warnings ✓ | 0 notes ✓
 
 
-* This is an updated release which changes the data standard.
+* This is an updated release which fixes controlled vocabulary issues.
+* There is more stringent testing in this release. All tests passed.
