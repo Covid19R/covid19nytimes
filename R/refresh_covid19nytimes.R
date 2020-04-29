@@ -93,7 +93,9 @@ refresh_covid19nytimes_counties <- function() {
   ) %>%
     dplyr::mutate(county_state = paste(county, state, sep = ","))
 
-  # reshape to data standard
+  # reshape to data standard, fix location_type col
   dat %>%
-    reshape_raw(location_col = county_state)
+    reshape_raw(location_col = county_state) %>%
+    dplyr::mutate(location_type = "county")
+
 }
