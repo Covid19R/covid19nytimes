@@ -2,6 +2,7 @@ pandoc: 2.3.1
 pkgdown: 1.5.1
 pkgdown_sha: ~
 articles:
+  county-maps: county-maps.html
   ny-times-bubble-map: ny-times-bubble-map.html
-last_built: 2020-04-29T02:16Z
+last_built: 2020-05-14T19:00Z
 
