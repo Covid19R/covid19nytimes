@@ -11,9 +11,9 @@ refresh_col_names <-
   )
 
 
-location_types <- read.csv("https://github.com/Covid19R/covid19R_data/raw/master/controlled_vocabularies/location_type.csv", stringsAsFactors = FALSE)[, 1]
-location_code_types <- read.csv("https://github.com/Covid19R/covid19R_data/raw/master/controlled_vocabularies/location_code_type.csv", stringsAsFactors = FALSE)[, 1]
-data_types <- read.csv("https://github.com/Covid19R/covid19R_data/raw/master/controlled_vocabularies/data_type.csv", stringsAsFactors = FALSE)[, 1]
+location_types <- read.csv("https://github.com/Covid19R/covid19Rdata/raw/master/controlled_vocabularies/location_type.csv", stringsAsFactors = FALSE)[, 1]
+location_code_types <- read.csv("https://github.com/Covid19R/covid19Rdata/raw/master/controlled_vocabularies/location_code_type.csv", stringsAsFactors = FALSE)[, 1]
+data_types <- read.csv("https://github.com/Covid19R/covid19Rdata/raw/master/controlled_vocabularies/data_type.csv", stringsAsFactors = FALSE)[, 1]
 
 # helper function
 
