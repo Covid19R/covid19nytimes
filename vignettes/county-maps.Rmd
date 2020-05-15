@@ -103,3 +103,18 @@ tm_shape(shp = lower_48_bg %>% summarize()) +
   legend.bg.color = "white")
 
 ```
+
+For those of you that wish to see this example in Ggplot2
+
+```{r ggplot}
+library(ggplot2)
+library(plotly)
+
+ggplot() +
+  geom_sf(data = lower_48, aes(fill = value), color = NA) +
+  geom_sf(data = lower_48_bg %>% summarize, col = "black", lwd = 1, fill = NA) +
+  scale_fill_viridis_c(guide = guide_colorbar(paste0("Total Cases on\n", this_date)),
+                                            trans = "log10") +
+  theme_classic() +
+  theme(legend.position = "top") 
+```
